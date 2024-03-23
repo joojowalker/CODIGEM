@@ -22,7 +22,7 @@ def NDCG_binary_at_k_batch(X_pred, heldout_batch, k=100):
     IDCG = np.array([(tp[:min(n, k)]).sum()
                      for n in heldout_batch.getnnz(axis=1)])
 
-    NDCG = (DCG / IDCG)
+    NDCG = DCG / (IDCG + 1e-10)
     return NDCG
 
 
@@ -36,6 +36,6 @@ def Recall_at_k_batch(X_pred, heldout_batch, k=100, factor=1):
     X_true_binary = (heldout_batch > 0).toarray()
     tmp = (np.logical_and(X_true_binary, X_pred_binary).sum(axis=1)).astype(
         np.float32)
-    recall = tmp / np.minimum(k, X_true_binary.sum(axis=1))
+    recall = tmp / np.minimum(k, X_true_binary.sum(axis=1) + 1e-10)
 
     return recall
