@@ -10,9 +10,9 @@ from data_processing import DataLoader
 
 # Directories and Paths
 
-path = r"C:\Users\Walker\Code for RS\Datasets\ml-20m" # Path to the dataset
+path = "PATH TO DATASET" # Path to the dataset
 
-final_results_dir = r"C:\Users\Walker\Code for RS\CODIGEM-main\CODIGEM-main\Results" # Directory to save the results
+final_results_dir = "PATH TO SAVE MODEL RESULTS" # Directory to save the model results
 
 pro_dir = os.path.join(path, 'pro_sg')
 
