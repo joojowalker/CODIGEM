@@ -120,7 +120,7 @@ def numerize(tp, profile2id, show2id):
 
 if __name__ == '__main__':
 
-    path = r"C:\Users\Walker\Code for RS\Datasets\ml-20m" # Path to the dataset
+    path = "PATH TO DATASET" # Path to the dataset
     dataset_name = "ml-20m" # Name of the dataset
     pro_dir = os.path.join(path, 'pro_sg')
     n_heldout_users = 10000
