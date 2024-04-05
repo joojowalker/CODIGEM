@@ -10,4 +10,8 @@ How to execute the CODIGEM model
 
 4. Run the code in any terminal. For instance, on your Anaconda terminal, the command would be: "python main.py"
 
+```Python
+   python main.py
+```
+
 5. Check the results in the folders earlier specified.
