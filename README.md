@@ -1,4 +1,4 @@
-# CODIGEM
+# CODIGEM - A Denoising Diffusion Probabilistic Model (DDPM) for Collaborative Filtering
 
 How to execute the CODIGEM model
 
@@ -40,5 +40,4 @@ Despite the success of classical collaborative filtering (CF) methods in the rec
   url          = {https://doi.org/10.1007/978-3-031-10989-8\_47},
   doi          = {10.1007/978-3-031-10989-8\_47}
 }
-
 ```
